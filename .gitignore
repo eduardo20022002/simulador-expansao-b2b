@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+.output
+.vinxi
+.tanstack/**
+.nitro
+*.local
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# o projeto usa bun; o lock do npm não vai para o repositório
+package-lock.json
+
+# CSVs de importação do Supabase (42 MB) — gerados por scripts/export_for_supabase.py
+supabase-import/
+*.csv
+
+# Credenciais reais — nunca commitar
+.env
+.env.local
